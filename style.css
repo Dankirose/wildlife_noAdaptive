@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+ }
+ .container {
+    max-width: 1600px;
+    width: 100%;
+ }
+ 
+ .slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+ }
+ .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ .navigation {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-175%);
+    display: flex;
+ }
+ .bar {
+    width: 64px;
+    height: 64px;
+    margin: 6px;
+    cursor: pointer;
+    background-image: url(./icons/lapka.png);
+    opacity: .5;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+ }
+ .bar:hover {
+    opacity: 1;
+    transform:scale(1.1);
+ } 
+ input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+ }
+ .slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+ } 
+ .slide {
+    width: 25%;
+    transition: all 0.6s ease;
+ }
+ .img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+ } 
+ #r1:checked ~ .s1 {
+    margin-left: 0;
+ } 
+ #r2:checked ~ .s1 {
+    margin-left: -25%;
+ } 
+ #r3:checked ~ .s1 {
+    margin-left: -50%;
+ } 
+ #r4:checked ~ .s1 {
+    margin-left: -75%;
+ }
+ .vertical-menu {
+    width: 90px; 
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.87) 100%);
+    backdrop-filter: blur(9.15479564666748px); 
+}
+.menu__nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    margin-top: 58px;
+}
+.vertical-menu a {
+    color: black; 
+    display: flex; 
+    justify-content: center;
+    text-decoration: none; 
+    width: 100%; 
+}
+hr {
+    width: 24px;
+    margin-top: 16px;
+}
+ul img {
+    width: 24px;
+    height: 24px;
+}
+ul {
+    list-style-type: none;
+}
+.menu__nav-end {
+    display: flex;
+    justify-content: center;
+    margin-top: 295px ;
+}
+.menu__nav-end ul li a  {
+    margin: 0;
+    width: 91.548px;
+    height: 91.548px;
+    align-items: center;
+}
+.nav__black {
+    background: #2C2C2E;
+}
+.nav__green {
+    background: #24632E;
+}
+.nav__black:active {
+    background-color: rgb(15, 128, 0);
+    outline: #4afc65 1px solid;
+}
+.nav__green:active {
+    background-color: rgb(15, 128, 0);
+    outline: #4afc65 1px solid;
+}
+.start__page {
+    color: #FFF;
+    font-family: "Roboto Condensed";
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: -1.54px;
+    font-style: normal;
+}
+.slash__page {
+    color: #FFF;
+    font-family: "Roboto Condensed";
+    font-size: 35.257px;
+    font-weight: 400;
+    letter-spacing: -1.939px;
+    font-style: normal;
+}
+.end__page {
+    color: #FFF;
+    font-family: "Roboto Condensed";
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.935px;
+    font-style: normal;
+}
+.logo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    left: 785px;
+}
+.logo__title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 54px;
+}
+.logo__title img {
+    width: 44.858px;
+    height: 44.858px;
+}
+.logo__title p {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 9.155px 4.519px 21.056px rgba(0, 0, 0, 0.40);
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 4.1px;
+}
+.logo__wild {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(93deg, rgba(255, 255, 255, 0.85) 4.45%, rgba(255, 255, 255, 0.10) 106.63%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    right: 370px;
+    margin-top: 110px;
+    
+}
+.logo__wild h1 {
+    text-shadow: 9.155px 4.519px 21.056px rgba(0, 0, 0, 0.192);
+    font-family: "Roboto Condensed";
+    font-size: 263.658px;
+    font-weight: 700;
+    background: linear-gradient(93deg, rgb(255, 255, 255) 4.45%, rgba(255, 255, 255, 0.10) 106.63%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -60px;
+
+}
+.logo__top-wild {
+    text-align: center;
+    text-shadow: 9.155px 4.519px 21.056px rgba(0, 0, 0, 0.288);
+    font-family: 'Roboto';
+    font-size: 21.972px;
+    font-weight: 900;
+    letter-spacing: 52.182px;
+    background: linear-gradient(93deg, rgba(255, 255, 255, 0.877) 4.45%, rgba(255, 255, 255, 0.774) 106.63%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 4;
+    left: 25px;
+}
+.wild__text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 500px;
+    left: 1000px;
+    width: 532.809px;
+    height: 98.872px;
+    
+  }
+  .wild__animal {
+    color: #FFF;
+    font-family: "Roboto Condensed";
+    font-size: 32.957px;
+    font-weight: 300;
+    letter-spacing: 3.79px;
+  }
+  .wild__animal_desc{
+    color: #FFF;
+    font-family: "Roboto Condensed";
+    font-size: 32.957px;
+    font-weight: 300;
+    letter-spacing: 3.79px;
+  }
+  .wild__desc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 41px;
+    gap: 12px;
+  }
+  .wild__cntry {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 21.972px;
+    font-weight: 700;
+  }
+  .wild__cntry1 {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 21.972px;
+    font-weight: 300;
+  }
+  .wild__cntry2 {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 16.479px;
+    font-weight: 300;
+    line-height: 24.718px;
+    letter-spacing: 0.659px;
+  }
+  .wild__more {
+    color: #32D74B;
+    font-family: 'Roboto';
+    font-size: 21.972px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  .wild__resul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+  .wild__speed1 {
+    color: #FFF;
+    font-family: "Roboto Condensed";
+    font-size: 43.943px;
+    font-weight: 400;
+    letter-spacing: -2.417px;
+  }
+  .wild__speed2 {
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 21.972px;
+    font-weight: 700;
+    opacity: 0.3;
+  }
